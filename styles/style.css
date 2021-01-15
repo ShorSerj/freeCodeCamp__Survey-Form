@@ -1,0 +1,116 @@
+body {
+    display: flex;
+    justify-content: center;
+    font-family: Poppins;
+    color: #f3f3f3;
+    font-size: 18px;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(115deg,
+            rgba(58, 58, 158, 0.8),
+            rgba(136, 136, 206, 0.7)),
+        url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: -1;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#title {
+    margin-top: 56px;
+    font-size: 32px;
+}
+
+#description {
+    margin: 13px 0 33px 0;
+    font-style: italic;
+    font-weight: 100;
+    letter-spacing: -0.1px;
+}
+
+.form-container {
+    background-color: rgba(27, 27, 50, 0.8);
+}
+
+.form-group:first-child {
+    margin-top: 48px;
+}
+
+.form-group {
+    margin: 0 45px 20px 45px;
+    display: flex;
+    flex-direction: column;
+    line-height: inherit;
+}
+
+.input {
+    width: 632px;
+    border-radius: 5px;
+    height: 37px;
+    margin: 12px 0;
+    font-size: 16px;
+    padding-left: 13px;
+}
+
+.input:focus {
+    border: solid 1px #80bdff;
+    outline: 0;
+    box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
+}
+
+.coment {
+    font-size: 15px;
+}
+
+.select {
+    font-size: 18px;
+}
+
+.radio,
+.checkbox {
+    display: flex;
+    margin-top: 13px;
+}
+
+.radio-button,
+.checkbox-button {
+    display: inline-block;
+    min-height: 20px;
+    min-width: 20px;
+    margin-right: 9px;
+}
+
+.select-favorite {
+    margin-top: 23px;
+}
+
+.comments {
+    margin: 21px 0 12px 0;
+}
+
+.textarea {
+    height: 120px;   
+    font-size: 16px;
+    padding: 9px 0 0 10px; 
+}
+.button-submit{
+    background-color: #37af65;
+    margin: 14px 0 50px 0;
+    border-radius: 2px;
+    height: 45px;
+    font-size: 16px;
+    color: white;
+}
